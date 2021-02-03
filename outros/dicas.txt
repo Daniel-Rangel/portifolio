@@ -1,0 +1,1 @@
+- para todo tamanho de  fonte-size sempre colocar um line-height 10px a mais.
