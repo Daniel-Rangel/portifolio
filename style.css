@@ -48,6 +48,7 @@ body{
 .structure{
     color: white;
     display: flex;
+    flex-direction: row-reverse;
     gap: 20px;
     justify-content: center;
     max-width: 900px;
@@ -101,11 +102,6 @@ body{
     letter-spacing: 0.1rem;
 }
 
-.projects{
-    background-color: brown;
-    width: 100vw;
-}
-
 /* habilidades */
 
 .skills,
@@ -142,6 +138,19 @@ body{
     text-decoration: none;
 }
 
-/**/
 
+/* projetos */
+.projects{
+    width: 100vw;
+}
+/* informações */
+.projects__info{
+    background-color: yellow;
+    height: 50vh;
+}
+/* cardes de projetos */
+.projects__cards{
+    background-color: #50fa7b;
+    height: 50vh;
+}
 
