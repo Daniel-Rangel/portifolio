@@ -1,21 +1,21 @@
 :root{
     --color-black: #282a36;
-    --color-white: #fff;
-    --color-green: #50fa7b;
-    --color-dark__grey: #333;
     --color-black__rgba:  rgba(0, 0, 0, 0.1);
-    --color-dark__grey_rgba: #4e4d4db0;
+    --color-dark__grey: #333;
+    --color-dark__grey-2: #4e4d4d;
+    --color-green: #50fa7b;
+    --color-white: #fff;
 }
 
 *{
-    margin: 0;
-    padding: 0;
     border: 0;
     box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: #282a36;
+    background-color:var(--color-black);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,14 +28,14 @@ body{
 }
 
 .menu__link{
-    display: inline-block;
-    margin: 0 1.1rem;
-    font-size: 1.14rem;
-    line-height: 1.75rem;
     color: var(--color-white);
-    text-decoration: none;
-    font-weight: normal;
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.14rem;
+    font-weight: normal;
+    line-height: 1.75rem;
+    margin: 0 1.1rem;
+    text-decoration: none;
 }
 
 .menu__link:hover{
@@ -46,49 +46,50 @@ body{
 /* estrutura */
 
 .structure{
+    color: white;
     display: flex;
+    gap: 20px;
+    justify-content: center;
     max-width: 900px;
     margin: 4vh auto;
-    gap: 20px;
-    color: white;
-    justify-content: center;
 }
 
 .information{
-    width: 40vw;
     background-color: var(--color-black__rgba);
     border: 1px solid var(--color-dark__grey);
     border-radius: 8px;
+    width: 40vw;
 }
 
 .card-avatar,
 .skills,
 .contacts{
-    background-color: var(--color-dark__grey_rgba);
+    background-color: var(--color-dark__grey-2);
+    border-radius: 5px;
     margin: 70px 10px 10px;
     padding: 8px;
-    border-radius: 5px;
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 
 .cardavatar__img{
-    display: inline-block;
-    width: 130px;
+    border: 6px solid var(--color-dark__grey-2);
     border-radius: 50%;
-    border: 6px solid var(--color-dark__grey_rgba);
+    display: inline-block;
+    left: 50%;
     position: absolute;
     top: -55px;
-    left: 50%;
     transform: translateX(-50%);
+    width: 130px;
 }
 
 .card-avatar__info{
-    margin-top: 70px;
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
+    margin-top: 70px;
     position: relative;
 }
+
 .card-avatar__name{
     flex: 1 0 auto;
 }
@@ -113,15 +114,15 @@ body{
 }
 
 .skills__title{
-    text-transform:uppercase;
     font-size: 1rem;
     margin-bottom: 4px;
+    text-transform:uppercase;
 }
 .skills__item{
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.62rem;
     align-items: center;
+    display: flex;
+    font-size: 0.62rem;
+    justify-content: space-between;
     margin-top: 4px;
 }
 
@@ -129,16 +130,18 @@ body{
 
 .contacts{
     background-color: #282a3600;
-    margin-top: 8px;
     display: flex;
     gap:20px;
     justify-content: center;
+    margin-top: 8px;
 }
 
 .contacts__links{
     color: white;
-    text-decoration: none;
     font-size: 1.5rem;
+    text-decoration: none;
 }
+
+/**/
 
 
