@@ -5,6 +5,7 @@
     --color-dark__grey-2: #4e4d4d;
     --color-green: #50fa7b;
     --color-white: #fff;
+    --space-gap: 1.5rem;
 }
 
 *{
@@ -49,17 +50,20 @@ body{
     color: white;
     display: flex;
     flex-direction: row-reverse;
-    gap: 20px;
+    gap: var(--space-gap);
     justify-content: center;
     max-width: 900px;
     margin: 4vh auto;
+}
+
+.aside{
+    width: 40vw;
 }
 
 .information{
     background-color: var(--color-black__rgba);
     border: 1px solid var(--color-dark__grey);
     border-radius: 8px;
-    width: 40vw;
 }
 
 .card-avatar,
@@ -106,7 +110,7 @@ body{
 
 .skills,
 .contacts{
-    margin-top: 10px;
+    margin-top: calc(var(--space-gap) / 2);
 }
 
 .skills__title{
@@ -127,7 +131,7 @@ body{
 .contacts{
     background-color: #282a3600;
     display: flex;
-    gap:20px;
+    gap: var(--space-gap);
     justify-content: center;
     margin-top: 8px;
 }
@@ -142,15 +146,54 @@ body{
 /* projetos */
 .projects{
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space-gap) / 2);
 }
 /* informações */
-.projects__info{
+.info-banner{
     background-color: yellow;
-    height: 50vh;
+    height: 30vh;
 }
 /* cardes de projetos */
-.projects__cards{
-    background-color: #50fa7b;
-    height: 50vh;
+.cards{
+    min-height: 38vh;
+    display: flex;
+    gap: calc(var(--space-gap) / 2);
+    flex-wrap: wrap;
 }
 
+.cards__item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 14vw;
+    border-radius: 5px;
+}
+
+.cards__figure{
+    max-height: 8vw;
+}
+
+.cards__img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cards__info{
+    padding: calc(var(--space-gap) / 2);
+    min-height: 30px;
+    background-color: aqua;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cards__name{
+    padding-bottom: calc(var(--space-gap) / 3);
+}
+
+.cards__description{
+    padding-top: calc(var(--space-gap) / 3);
+}
