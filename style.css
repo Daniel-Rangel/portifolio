@@ -6,6 +6,7 @@
     --color-green: #50fa7b;
     --color-white: #fff;
     --space-gap: 1.5rem;
+    --color-teste: rgb(103, 119, 87);
 }
 
 *{
@@ -51,19 +52,23 @@ body{
     display: flex;
     flex-direction: row-reverse;
     gap: var(--space-gap);
-    justify-content: center;
     max-width: 900px;
     margin: 4vh auto;
+    flex-wrap: wrap;
 }
 
 .aside{
-    width: 40vw;
+    width: 25%;
+    max-width: 240px;
+    min-width: 239px;
+    margin: 0 auto;
 }
 
 .information{
     background-color: var(--color-black__rgba);
     border: 1px solid var(--color-dark__grey);
     border-radius: 8px;
+    flex: 1 0 250px;
 }
 
 .card-avatar,
@@ -96,21 +101,23 @@ body{
 }
 
 .card-avatar__name{
-    flex: 1 0 auto;
+    flex: 1 0 150px;
 }
 
 .card-avatar__job{
-    flex: 1 0 auto;
+    flex: 1 0 100px;
     font-size: 0.8rem;
-    line-height: 2rem;
+    line-height: 1rem;
     letter-spacing: 0.1rem;
+    padding: calc(var(--space-gap) / 4);
 }
 
 /* habilidades */
 
 .skills,
 .contacts{
-    margin-top: calc(var(--space-gap) / 2);
+    flex: 1 0 100px;
+    margin-top: calc(var(--space-gap) / 4);
 }
 
 .skills__title{
@@ -145,39 +152,43 @@ body{
 
 /* projetos */
 .projects{
-    width: 100vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: calc(var(--space-gap) / 2);
 }
 /* informações */
 .info-banner{
-    background-color: yellow;
+    background-color: var(--color-black__rgba);
     height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-dark__grey);
+
 }
 /* cardes de projetos */
 .cards{
-    min-height: 38vh;
     display: flex;
     gap: calc(var(--space-gap) / 2);
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .cards__item{
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    flex: 1 0 14vw;
     border-radius: 5px;
-}
-
-.cards__figure{
-    max-height: 8vw;
+    flex: 1 0 200px;
 }
 
 .cards__img{
     width: 100%;
     height: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -185,15 +196,24 @@ body{
 .cards__info{
     padding: calc(var(--space-gap) / 2);
     min-height: 30px;
-    background-color: aqua;
+    background-color: var(--color-dark__grey-2);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .cards__name{
     padding-bottom: calc(var(--space-gap) / 3);
+    text-transform: capitalize;
+
 }
 
 .cards__description{
     padding-top: calc(var(--space-gap) / 3);
+    padding-bottom: calc(var(--space-gap) /3);
+}
+
+.cards__link{
+    color: var(--color-green);
+    text-decoration: none;
+    text-transform: lowercase;
 }
