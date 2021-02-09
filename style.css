@@ -189,6 +189,10 @@ body{
     
 }
 
+.info-banner__name{
+    color: var(--color-green);
+}
+
 .info-banner__span{
     font-size: 1em;
     font-style: normal;
@@ -242,3 +246,43 @@ body{
     text-decoration: none;
     text-transform: lowercase;
 }
+
+/* projetos */
+
+.structure-p{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects-p{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.card-p{
+    display: flex;
+    position: relative;
+    width: 45%;
+    margin: 16px;
+    height: 250px;
+    gap: 20px;
+    background-color: blueviolet;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.card-p__img{
+    position:absolute;
+    top:10px;
+    left:10px;
+    height: calc(100% - 20px);
+    width: calc(100% -20px);
+}
+
+.card-p__img-src{
+    width: 85%;
+}
+
