@@ -266,23 +266,66 @@ body{
 .card-p{
     display: flex;
     position: relative;
-    width: 45%;
+    width: 26.80%;
     margin: 16px;
-    height: 250px;
-    gap: 20px;
-    background-color: blueviolet;
+    min-height: 250px;
+    border-radius: 20px;
+    background-color: var(--color-black__rgba);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-}
-
-.card-p__img{
-    position:absolute;
-    top:10px;
-    left:10px;
-    height: calc(100% - 20px);
-    width: calc(100% -20px);
+    color: var(--color-white);
 }
 
 .card-p__img-src{
-    width: 85%;
+    position:absolute;
+    top:10px;
+    left:10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    overflow:hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
+    transition: 0.5s ease-in-out
 }
 
+.card-p:hover .card-p__img-src{
+    height: 150px;
+    width: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+}
+
+.card-p__content{
+    position:absolute;
+    right: 0;
+    width:calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-p__name{
+    color: var(--color-green);
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.link-button{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: var(--color-green);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight:500;
+    color: var(--color-white);
+}
