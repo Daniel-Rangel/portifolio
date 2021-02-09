@@ -169,11 +169,6 @@ body{
     padding: calc(var(--space-gap) / 2);
 }
 
-.info-banner__title{
-
-}
-
-
 .info-banner__text{
     font-size: 0.95rem;
     padding: calc(var(--space-gap) / 2);
