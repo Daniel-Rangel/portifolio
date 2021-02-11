@@ -193,7 +193,16 @@ body{
     font-style: normal;
 }
 
+/* projetos */
+
+.structure-p__titulo{
+    color: var(--color-white);
+    margin-top: 2rem;
+    font-weight: 100;
+}
+
 /* cardes de projetos */
+
 .cards{
     display: flex;
     gap: calc(var(--space-gap) / 2);
@@ -324,4 +333,21 @@ body{
     font-size: 1rem;
     font-weight:500;
     color: var(--color-white);
+}
+
+/* videos */
+.structure-v{
+    width: 800px;
+    margin: 0 auto;
+    color: var(--color-white);
+}
+
+.structure-v__title{
+    margin: 1rem;
+    font-weight: 100;
+}
+
+.structure-v__text{
+    font-weight: 300;
+    margin: 1rem;
 }
