@@ -101,6 +101,9 @@ ul li{
 section:first-child{
     background-color: var(--dark);
     height: 80vh;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden;
 }
 
 section:first-child > div {
@@ -115,6 +118,8 @@ section:first-child > div div{
     justify-content: center;
     gap:2rem;
     height: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 section:first-child h1{
@@ -140,170 +145,14 @@ section:first-child span.button-container{
 section:first-child figure{
     width: 100%;
     position: relative;
+
 }
 
-section:first-child figure img:nth-child(1){
-    width: 70%;
+section:first-child figure img{
     transform: rotate(90deg);
-    animation: rotacao 2s linear infinite; 
+    animation: rotacao 5s linear infinite; 
     position: absolute;
-    top: 18%;
-    left: -44px;
 }
-
-section:first-child figure img:nth-child(2){
-    width: 68%;
-    transform: rotate(92deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(3){
-    width: 66%;
-    transform: rotate(94deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(4){
-    width: 64%;
-    transform: rotate(96deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(5){
-    width: 62%;
-    transform: rotate(98deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(6){
-    width: 60%;
-    transform: rotate(100deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(7){
-    width: 58%;
-    transform: rotate(102deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(8){
-    width: 56%;
-    transform: rotate(104deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(9){
-    width: 54%;
-    transform: rotate(108deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(10){
-    width: 52%;
-    transform: rotate(112deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(11){
-    width: 50%;
-    transform: rotate(116deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(12){
-    width: 48%;
-    transform: rotate(120deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(13){
-    width: 46%;
-    transform: rotate(124deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(14){
-    width: 44%;
-    transform: rotate(128deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(15){
-    width: 42%;
-    transform: rotate(20deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(16){
-    width: 40%;
-    transform: rotate(134deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(17){
-    width: 38%;
-    transform: rotate(138deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
-section:first-child figure img:nth-child(18){
-    width: 36%;
-    transform: rotate(20deg);
-    animation: rotacao 2s linear infinite; 
-    position: absolute;
-    top: 18%;
-    left: -44px;
-}
-
 
 
 @keyframes rotacao {
@@ -316,3 +165,13 @@ section:first-child figure img:nth-child(18){
 }
 
 /* 30% */
+
+/* 
+
+width: 0.622
+top: 0.69
+left: 1.586
+
+
+
+*/
