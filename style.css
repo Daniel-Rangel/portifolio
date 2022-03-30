@@ -301,6 +301,36 @@ section:nth-child(4) figure a img{
     min-height: 0;
 }
 
+/* Experiência */
+
+.experiencia{
+    background-color: var(--dark);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.experience_container div{
+    display: flex;
+    gap: 4rem;
+    
+}
+
+.experience_container h2{
+    margin: 2rem 0 1.5rem 0;
+}
+
+.experiencia .experience_companies li{
+    padding: 1rem 1.5rem 1rem 2rem;
+    background-color: var(--dark);
+    color: #C4C4C4;
+    border-left: 2px solid #151515;
+    transform: none;
+}
+
+.experiencia .experience_companies li.ativo{
+    border-left: 2px solid var(--blue);
+    background: #151515;
+}
 
 /* 30% */
 
