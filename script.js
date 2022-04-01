@@ -99,7 +99,7 @@ data.map( empresa => {
             compH3.innerText = empresa.empresa
             compSpan.innerText = empresa.data
         }
-        console.log(li.className)
+
     })
 })
 
