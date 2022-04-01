@@ -310,13 +310,18 @@ section:nth-child(4) figure a img{
 }
 
 .experience_container div{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 1fr;
     gap: 4rem;
     
 }
 
 .experience_container h2{
     margin: 2rem 0 1.5rem 0;
+}
+
+.experience_container .experience_companies{
+    display: block;
 }
 
 .experiencia .experience_companies li{
@@ -332,6 +337,34 @@ section:nth-child(4) figure a img{
     background: #151515;
 }
 
+/* Descrição */
+
+.experience_container .companies_description{
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 2rem;
+}
+
+.experience_container .comp_description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comp_description h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.companies_profession{
+    color: var(--blue);
+}
+
+.companies_description p{
+    color: var(--gray-light);
+}
 /* 30% */
 
 /* 
