@@ -365,6 +365,26 @@ section:nth-child(4) figure a img{
 .companies_description p{
     color: var(--gray-light);
 }
+
+footer{
+    background-color: var(--dark);
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gray-light);
+}
+
+footer span{
+    margin-left: 0.3rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
 /* 30% */
 
 /* 
