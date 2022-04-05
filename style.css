@@ -385,6 +385,33 @@ footer span{
     color: var(--blue);
 }
 
+@media screen and (max-width: 425px) {
+    .container{
+        padding: 2rem 1rem;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    section:first-child > div{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+
+    section:first-child figure{
+        display: none;
+    }
+
+    section:first-child > div div h1{
+        font-size: 1.2rem;
+    }
+
+    section:first-child h1 span{
+        font-size: 2rem;
+    }
+  }
+
 /* 30% */
 
 /* 
