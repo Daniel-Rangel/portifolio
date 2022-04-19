@@ -410,7 +410,25 @@ footer span{
     section:first-child h1 span{
         font-size: 2rem;
     }
-  }
+
+    section:nth-child(2){
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+        height: auto;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    section:nth-child(2) div{
+        justify-content: center;
+    }
+
+    section:nth-child(4) div{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+}
 
 /* 30% */
 
