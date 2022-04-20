@@ -420,6 +420,21 @@ footer span{
         gap: 2rem;
     }
 
+    .experience_container div{
+        grid-template-columns: none;
+        grid-template-rows: 1;
+        overflow: hidden;
+    }
+
+    .experience_companies ul{
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .experiencia .experience_companies li {
+        padding: 1rem 1rem 1rem 0.5rem;
+    }
+
     section:nth-child(2) div{
         justify-content: center;
     }
