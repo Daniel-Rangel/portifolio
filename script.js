@@ -43,6 +43,7 @@ const data = [
     }
 ]
 
+const figureImg = document.querySelector('figure#imgs-js')
 const imagens = document.querySelectorAll('figure#imgs-js img')
 const experience_companies = document.querySelector('.experience_companies ul')
 
@@ -101,5 +102,27 @@ data.map( empresa => {
         }
 
     })
+})
+
+/* Variação de cofigo com SVG */
+
+const vetorImages = []
+const quantidade = 60
+
+const imagensSvg = document.querySelector('.hexagono')
+let widthImg = imagensSvg.width.baseVal.value
+let heightImg = imagensSvg.height.baseVal.value
+
+
+for(let i = 0; i < quantidade; i++){
+    imagensSvg.attributes.width.value = widthImg 
+    console.log(imagensSvg)
+    vetorImages.push(imagensSvg)
+}
+
+vetorImages.forEach((elementoImagens , index)=>{
+
+    console.log(elementoImagens)
+    figureImg.tagName = elementoImagens
 })
 
