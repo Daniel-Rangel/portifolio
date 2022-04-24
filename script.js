@@ -44,10 +44,11 @@ const data = [
 ]
 
 const figureImg = document.querySelector('figure#imgs-js')
-const imagens = document.querySelectorAll('figure#imgs-js img')
-const experience_companies = document.querySelector('.experience_companies ul')
 
-/* animação */
+// const imagens = document.querySelectorAll('figure#imgs-js img')
+// const experience_companies = document.querySelector('.experience_companies ul')
+
+/* animação 
 imagens.forEach((elementoImagens , indexImagens) => {
     const calc = imagens.length - indexImagens
 
@@ -57,6 +58,41 @@ imagens.forEach((elementoImagens , indexImagens) => {
     elementoImagens.style.animationDelay = `${(indexImagens * 38)}ms`
     elementoImagens.style.opacity = `${indexImagens >= 10 ? 1 : (`0.${indexImagens}`) }`
 })
+*/
+
+
+/* Variação de cofigo com SVG */
+const imagensSvg = document.querySelector('.hexagono')
+
+const vetorImages = []
+const quantidade = 65
+
+const widthImg = imagensSvg.width.baseVal.value
+const heightImg = imagensSvg.height.baseVal.value
+
+
+for(let i = 0; i < quantidade; i++){
+    const imageClone = imagensSvg.cloneNode(true)
+    imageClone.attributes.width.value = widthImg - i
+    imageClone.attributes.height.value = heightImg - (i * 4.5)
+    // console.log(heightImg - (i * 4.2), i)
+    vetorImages.push(imageClone)
+}
+
+vetorImages.map((elementoImagens , index)=>{
+
+    elementoImagens.style.bottom = 10
+    elementoImagens.style.left = `${index * 9.5}`
+    elementoImagens.style.animationDelay = `${index * 45}ms`
+    elementoImagens.style.opacity =  `${index >= 10 ? 1 : (`0.${index}`) }`
+
+    figureImg.appendChild( elementoImagens )
+
+})
+
+
+
+
 
 
 data.map( empresa => {
@@ -103,26 +139,3 @@ data.map( empresa => {
 
     })
 })
-
-/* Variação de cofigo com SVG */
-
-const vetorImages = []
-const quantidade = 60
-
-const imagensSvg = document.querySelector('.hexagono')
-let widthImg = imagensSvg.width.baseVal.value
-let heightImg = imagensSvg.height.baseVal.value
-
-
-for(let i = 0; i < quantidade; i++){
-    imagensSvg.attributes.width.value = widthImg 
-    console.log(imagensSvg)
-    vetorImages.push(imagensSvg)
-}
-
-vetorImages.forEach((elementoImagens , index)=>{
-
-    console.log(elementoImagens)
-    figureImg.tagName = elementoImagens
-})
-

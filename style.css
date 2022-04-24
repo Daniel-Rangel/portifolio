@@ -155,17 +155,23 @@ section:first-child span.button-container{
 
 /* banner figure */
 
+/* svg:nth-child(0){
+    display: none;
+} */
+
 section:first-child figure{
     width: 100%;
     position: relative;
 
 }
-
-section:first-child figure img{
+section:first-child figure svg:nth-child(1){
+    opacity: 0;
+}
+section:first-child figure svg{
     transform: rotate(0deg);
     animation: rotacao 5s linear infinite; 
     position: absolute;
-    fill: #6518B4;
+    /* fill: #6518B4; */
 }
 
 
