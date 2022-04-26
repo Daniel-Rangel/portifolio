@@ -44,9 +44,17 @@ const data = [
 ]
 
 const figureImg = document.querySelector('figure#imgs-js')
+const experience_companies = document.querySelector('.experience_companies ul')
+const imagensSvg = document.querySelector('.hexagono')
+
+const vetorImages = []
+const quantidade = 65
+
+const widthImg = imagensSvg.width.baseVal.value
+const heightImg = imagensSvg.height.baseVal.value
+
 
 // const imagens = document.querySelectorAll('figure#imgs-js img')
-// const experience_companies = document.querySelector('.experience_companies ul')
 
 /* animação 
 imagens.forEach((elementoImagens , indexImagens) => {
@@ -60,16 +68,7 @@ imagens.forEach((elementoImagens , indexImagens) => {
 })
 */
 
-
-/* Variação de cofigo com SVG */
-const imagensSvg = document.querySelector('.hexagono')
-
-const vetorImages = []
-const quantidade = 65
-
-const widthImg = imagensSvg.width.baseVal.value
-const heightImg = imagensSvg.height.baseVal.value
-
+/* Variação de codigo com SVG */
 
 for(let i = 0; i < quantidade; i++){
     const imageClone = imagensSvg.cloneNode(true)
@@ -89,11 +88,6 @@ vetorImages.map((elementoImagens , index)=>{
     figureImg.appendChild( elementoImagens )
 
 })
-
-
-
-
-
 
 data.map( empresa => {
     let li = document.createElement('li')
@@ -139,3 +133,30 @@ data.map( empresa => {
 
     })
 })
+
+function gradientColor(grt1 , grt2){
+    let gradient1 = document.querySelector('.stop1')
+    let gradient2 = document.querySelector('.stop2')
+
+    gradient1.style.stopColor = grt1
+    gradient2.style.stopColor = grt2
+
+    console.log(gradient2.style.stopColor)
+
+
+}
+
+
+
+
+setInterval(
+    
+    ()=>{
+        let gradient1 = document.querySelector('.stop1')
+        let gradient2 = document.querySelector('.stop2')
+        gradient1.style.stopColor == 'rgb(255, 0, 0)' ? gradientColor('#ff0' , '#f0f') : gradientColor('#f00' , '#0ff')
+        //gradient2.style.stopColor == 'rgb(0, 0, 255)' ? gradientColor('#f00' , '#00f'): gradientColor('#f00' , '#00f')
+
+    }, 2000
+)
+
