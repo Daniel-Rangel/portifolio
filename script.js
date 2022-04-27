@@ -80,15 +80,32 @@ for(let i = 0; i < quantidade; i++){
 
 vetorImages.map((elementoImagens , index)=>{
 
+
     elementoImagens.style.bottom = 10
     elementoImagens.style.left = `${index * 9.5}`
     elementoImagens.style.animationDelay = `${index * 45}ms`
     elementoImagens.style.opacity =  `${index >= 10 ? 1 : (`0.${index}`) }`
 
+    let imgColors = []
+
+    imgColors.push(elementoImagens)
+
+    
     figureImg.appendChild( elementoImagens )
+
+    
 
 })
 
+/* setInterval(
+    ()=>{
+        let gradient1 = document.querySelector('.stop1')
+        gradient1.style.stopColor == 'rgb(255, 28, 247)' ? gradientColor('#fff' , '#121212') : gradientColor('#FF1CF7' , '#00F0FF')
+        //gradient2.style.stopColor == 'rgb(0, 0, 255)' ? gradientColor('#f00' , '#00f'): gradientColor('#f00' , '#00f')
+        
+    }, 2000
+)
+ */
 data.map( empresa => {
     let li = document.createElement('li')
     let text = document.createTextNode(empresa.empresa)
@@ -141,22 +158,7 @@ function gradientColor(grt1 , grt2){
     gradient1.style.stopColor = grt1
     gradient2.style.stopColor = grt2
 
-    console.log(gradient2.style.stopColor)
-
-
+    console.log(gradient1.style.stopColor)
 }
 
-
-
-
-setInterval(
-    
-    ()=>{
-        let gradient1 = document.querySelector('.stop1')
-        let gradient2 = document.querySelector('.stop2')
-        gradient1.style.stopColor == 'rgb(255, 0, 0)' ? gradientColor('#ff0' , '#f0f') : gradientColor('#f00' , '#0ff')
-        //gradient2.style.stopColor == 'rgb(0, 0, 255)' ? gradientColor('#f00' , '#00f'): gradientColor('#f00' , '#00f')
-
-    }, 2000
-)
 
