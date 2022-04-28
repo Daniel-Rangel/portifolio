@@ -78,23 +78,28 @@ for(let i = 0; i < quantidade; i++){
     vetorImages.push(imageClone)
 }
 
-vetorImages.map((elementoImagens , index)=>{
 
+
+vetorImages.map((elementoImagens , index)=>{
 
     elementoImagens.style.bottom = 10
     elementoImagens.style.left = `${index * 9.5}`
     elementoImagens.style.animationDelay = `${index * 45}ms`
     elementoImagens.style.opacity =  `${index >= 10 ? 1 : (`0.${index}`) }`
 
-    let imgColors = []
-
-    imgColors.push(elementoImagens)
-
+    
+    
+    
     
     figureImg.appendChild( elementoImagens )
-
     
+    
+})
 
+let gradient1 = document.querySelectorAll('.stop1')
+
+gradient1.map(()=>{
+    
 })
 
 /* setInterval(
